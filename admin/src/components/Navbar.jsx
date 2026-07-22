@@ -17,10 +17,10 @@ const Navbar = () => {
     aToken && setAToken('')
     aToken && localStorage.removeItem('aToken')
   }
-
   const goToUserPanel = () => {
     window.location.href = 'https://appointy-roan.vercel.app/'
   }
+
 
   const isOnDashboard =
     location.pathname === '/admin-dashboard' ||
