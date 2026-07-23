@@ -11,15 +11,15 @@ const Navbar = () => {
   const location = useLocation()
 
   const logout = () => {
-    navigate('/')
+    window.location.href = 'http://localhost:5173'
     dToken && setDToken('')
     dToken && localStorage.removeItem('dToken')
     aToken && setAToken('')
     aToken && localStorage.removeItem('aToken')
   }
-  const goToUserPanel = () => {
-    window.location.href = 'https://appointy-roan.vercel.app/'
-  }
+  // const goToUserPanel = () => {
+  //   window.location.href = 'http://localhost:5173'
+  // }
 
 
   const isOnDashboard =
@@ -44,14 +44,14 @@ const Navbar = () => {
         </p>
 
         {/* User Panel Button (visible on both dashboards) */}
-        {isOnDashboard && (
+        {/* {isOnDashboard && (
           <button
             onClick={goToUserPanel}
             className='ml-2 text-white bg-primary hover:bg-gray-700 px-3 py-1.5 rounded-full text-xs'
           >
             User Panel
           </button>
-        )}
+        )} */}
       </div>
 
       {/* Logout */}
