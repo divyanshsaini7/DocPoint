@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex items-start gap-4">
   <img className="mb-5 w-40" src={assets.logo} alt="DocPoint Logo" />
   <p className="w-full md:w-2/3 text-gray-600 leading-6">
-    <strong>Appointy – Effortless Healthcare Scheduling
+    <strong>DocPoint – Effortless Healthcare Scheduling
 
 </strong> <br />Patients can instantly book appointments with trusted doctors—from routine check-ups to specialist care—in just a few clicks. Our smart reminders keep appointments on track, while real-time updates ensure seamless coordination. Designed for modern healthcare, we save time for both patients and providers.
   </p>
