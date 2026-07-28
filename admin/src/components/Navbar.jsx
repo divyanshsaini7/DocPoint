@@ -11,7 +11,7 @@ const Navbar = () => {
   const location = useLocation()
 
   const logout = () => {
-    window.location.href = 'http://localhost:5173'
+    window.location.href = 'https://docpoint-frontend.vercel.app/'
     dToken && setDToken('')
     dToken && localStorage.removeItem('dToken')
     aToken && setAToken('')
